@@ -1,0 +1,15 @@
+{
+  "description": "The tkcore is a port of tkregistry",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    "boost-stacktrace",
+    "boost-test"
+  ]
+}

@@ -1,0 +1,14 @@
+@PACKAGE_INIT@
+
+# find dependencies
+set(Boost_NO_WARN_NEW_VERSIONS ON)
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+  find_package(Boost REQUIRED COMPONENTS stacktrace_windbg)
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+  find_package(Boost REQUIRED COMPONENTS stacktrace_basic)
+else()
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/@PROJECT_NAME@-targets.cmake")
+check_required_components("@PROJECT_NAME@")
