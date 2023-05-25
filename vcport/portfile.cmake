@@ -36,9 +36,9 @@
 #  vcpkg_from_bitbucket
 #  vcpkg_from_sourceforge
 vcpkg_download_distfile(ARCHIVE
-    URLS "https://github.com/TKCPlusProjects/tkcore/releases/download/0.1.1/tkcore-0.1.1.zip"
-    FILENAME "tkcore-0.1.1.zip"
-    SHA512 075ef8048db60e674add4eac6f6cf9564a4a65450eeca574e9ba1a68863bced68778b24e08f75a55b7ce95b1a5b922ed2e2dffa40eff432de8df07107d3411b6
+    URLS "https://github.com/TKCPlusProjects/tkcore/releases/download/0.1.2/tkcore-0.1.2.zip"
+    FILENAME "tkcore-0.1.2.zip"
+    SHA512 dd9a06f98cbb2791c13da045895d782721cafb58b1f04af852ccc25afb5b147fd2392239caa6b994e0de5bc6b470709df29c88e0453599f9546dbac9d47da08a
 )
 
 vcpkg_extract_source_archive_ex(
