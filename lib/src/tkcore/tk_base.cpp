@@ -1,3 +1,5 @@
 #include <tkcore/tk_base.hpp>
 
-namespace tkht {} // namespace tkht
+namespace tkht {
+  bool Debug = false;
+} // namespace tkht

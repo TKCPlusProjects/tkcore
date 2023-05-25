@@ -14,7 +14,7 @@
 using namespace std;
 
 namespace tkht {
-static bool Debug = false;
+extern bool Debug;
 } // namespace tkht
 
 #endif /* tkcore_base_hpp */
