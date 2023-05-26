@@ -1,6 +1,6 @@
 {
   "name": "tkcore",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "The tkcore is a port of vcpkg",
   "homepage": "https://github.com/ZhengXianda/tkcore",
   "dependencies": [
