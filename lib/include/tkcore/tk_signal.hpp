@@ -4,7 +4,7 @@
 #include <tkcore/tk_base.hpp>
 
 namespace tkht {
-void SubscribeSignalAbort();
+void SubscribeSignalCrash();
 } // namespace tkht
 
 #endif /* tkcore_signal_hpp */

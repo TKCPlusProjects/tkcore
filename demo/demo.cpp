@@ -6,7 +6,7 @@ int main() {
   Msg("Message.");
   Err("Error!");
 
-  SubscribeSignalAbort();
+  SubscribeSignalCrash();
 
   abort();
 

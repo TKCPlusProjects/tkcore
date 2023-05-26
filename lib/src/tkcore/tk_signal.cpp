@@ -3,7 +3,7 @@
 #include <signal.h>
 
 namespace tkht {
-void HandlerSignalAbort(int signal) {
+void HandlerSignalCrash(int signal) {
     cout << "Stack trace: " << endl;
     
     const size_t max_frames = 100;
@@ -23,7 +23,8 @@ void HandlerSignalAbort(int signal) {
     exit(signal);
 }
 
-void SubscribeSignalAbort() {
-  signal(SIGABRT, HandlerSignalAbort);
+void SubscribeSignalCrash() {
+  signal(SIGABRT, HandlerSignalCrash);
+  signal(SIGSEGV, HandlerSignalCrash);
 }
 } // namespace tkht
