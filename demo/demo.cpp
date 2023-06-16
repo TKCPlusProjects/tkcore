@@ -9,9 +9,10 @@ int main() {
 
   // iterator
   vector<int> arr{0, 1, 2, 3, 4, 5};
-  for (int i = 0; i < arr.size(); i++) {
-    ForJump(int, v, arr, i) {
-      printf("%d - ", v);
+  for (int jump_i = 0; jump_i < arr.size(); jump_i++) {
+    printf(" - ");
+    ForJump(i, arr, jump_i) {
+      printf("[%d]%d - ", i, arr[i]);
     }
     printf("\n");
   }
