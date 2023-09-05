@@ -1,9 +1,9 @@
 #include <boost/test/unit_test.hpp>
 #include <tkcore/tkcore.hpp>
 
-using namespace tkht;
-
-BOOST_AUTO_TEST_CASE(tkcore_log_log) {
+BOOST_AUTO_TEST_CASE(tkcore_test_log_log) {
+  using namespace tkht;
+  
   // 开启日志
   Debug = true;
   const char *log_file_name = "log.txt";

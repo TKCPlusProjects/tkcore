@@ -1,6 +1,7 @@
 #include <tkcore/tkcore_log.hpp>
 
-namespace tkht {
+namespace tkht
+{
 int Print(FILE *stream, const char *tag, const char *format, va_list arg_list) {
   int result = 0;
   if (Debug) {
@@ -32,6 +33,7 @@ int Msg(const char *format, ...) {
   }
   return result;
 }
+
 int Err(const char *format, ...) {
   int result = 0;
   {
@@ -42,4 +44,4 @@ int Err(const char *format, ...) {
   }
   return result;
 }
-} // namespace tkht
+}

@@ -1,11 +1,6 @@
-/**
- * @file tkcore_base.hpp
- * @brief 基础头文件
- * 
- */
-
-#ifndef tkcore_base_hpp
-#define tkcore_base_hpp
+/// @file tkcore_base.hpp
+#ifndef tkcore_base
+#define tkcore_base
 
 #include <cstdlib>
 #include <cstdio>
@@ -16,6 +11,7 @@
 #include <sstream>
 
 #include <map>
+#include <set>
 #include <list>
 #include <vector>
 #include <algorithm>
@@ -25,16 +21,11 @@
 #include <stdarg.h>
 #include <signal.h>
 
-/**
- * @brief Namespace of TokiHunter
- * 
- */
-namespace tkht {
-/**
- * @brief 命名空间内的运行环境
- * 
- */
+/// @namespace Namespace TKHT
+namespace tkht
+{
+/// @brief 命名空间内的运行环境
 extern bool Debug;
-} // namespace tkht
+}
 
-#endif /* tkcore_base_hpp */
+#endif

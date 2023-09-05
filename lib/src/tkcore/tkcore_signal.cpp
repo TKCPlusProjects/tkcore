@@ -3,7 +3,8 @@
 #define _GNU_SOURCE
 #include <boost/stacktrace.hpp>
 
-namespace tkht {
+namespace tkht
+{
 void HandlerSignal(int signal_num) {
   std::cout << "Stack trace: " << std::endl;
 
@@ -17,4 +18,4 @@ void SubscribeSignalList(std::vector<int> signal_num_list) {
     signal(signal_num, HandlerSignal);
   }
 }
-} // namespace tkht
+}

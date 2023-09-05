@@ -1,5 +1,6 @@
 #include <tkcore/tkcore_base.hpp>
 
-namespace tkht {
+namespace tkht
+{
 bool Debug = false;
-} // namespace tkht
+}
