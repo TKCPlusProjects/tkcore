@@ -9,7 +9,13 @@
       "name": "vcpkg-cmake-config",
       "host": true
     },
-    "boost-stacktrace",
-    "boost-test"
+    {
+      "name": "boost-stacktrace",
+      "version>=": "1.82.0#2"
+    },
+    {
+      "name": "boost-test",
+      "version>=": "1.82.0#2"
+    }
   ]
 }
