@@ -21,7 +21,7 @@
 #include <stdarg.h>
 #include <signal.h>
 
-/// @namespace Namespace TKHT
+/// @namespace Namespace tkht
 namespace tkht
 {
 /// @brief 命名空间内的运行环境
