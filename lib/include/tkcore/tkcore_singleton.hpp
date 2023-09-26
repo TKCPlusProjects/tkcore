@@ -7,33 +7,23 @@
 namespace tkht
 {
 /// @brief 单例
+template <typename T>
 class Singleton {
-protected:
-  ~Singleton() {
-  }
-
-  Singleton() {
-  }
-
-  Singleton(const Singleton&)            = default;
-  Singleton& operator=(const Singleton&) = default;
 public:
-  static Singleton& Shared() {
-    static Singleton instance;
+  static T& Shared() {
+    static T instance;
     return instance;
   }
 };
 
-#define TKHT_SIGNLETON(NAME, MENBER_LIST)             \
-  class NAME : public Singleton {                     \
-  public:                                             \
-    static NAME& Shared() {                           \
-      return static_cast<NAME&>(Singleton::Shared()); \
-    }                                                 \
-                                                      \
-    MENBER_LIST                                       \
+#define TKHT_SIGNLETON(NAME)                    \
+private:                                        \
+  NAME(const NAME&)            = delete;        \
+  NAME& operator=(const NAME&) = delete;        \
+public:                                         \
+  static NAME& Shared() {                       \
+    return Singleton<NAME>::Shared(); \
   }
-
 }
 
 #endif
