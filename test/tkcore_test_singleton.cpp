@@ -40,8 +40,6 @@ BOOST_AUTO_TEST_CASE(tkcore_test_singleton_macro) {
     void set_id(int id) {
       this->id = id;
     }
-
-    SingletonMacro() {};
   };
 
   SingletonMacro::Shared().set_id(9);

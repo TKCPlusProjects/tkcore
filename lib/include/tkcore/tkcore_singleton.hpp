@@ -16,13 +16,15 @@ public:
   }
 };
 
-#define TKHT_SIGNLETON(NAME)                    \
-private:                                        \
-  NAME(const NAME&)            = delete;        \
-  NAME& operator=(const NAME&) = delete;        \
-public:                                         \
-  static NAME& Shared() {                       \
-    return Singleton<NAME>::Shared(); \
+#define TKHT_SIGNLETON(NAME)             \
+private:                                 \
+  NAME(const NAME&)            = delete; \
+  NAME& operator=(const NAME&) = delete; \
+public:                                  \
+  ~NAME() {};                            \
+  NAME() {};                             \
+  static NAME& Shared() {                \
+    return Singleton<NAME>::Shared();    \
   }
 }
 
