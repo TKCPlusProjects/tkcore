@@ -7,6 +7,7 @@
 
 namespace tkht
 {
+/// @brief JSON结构体
 struct JSON: public nlohmann::json {
 protected:
   /// @brief 标准化文件名
