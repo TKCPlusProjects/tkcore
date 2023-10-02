@@ -4,7 +4,7 @@
 BOOST_AUTO_TEST_CASE(tkcore_test_log) {
   using namespace tkht;
 
-  // 开启日�?
+  // 开启日志
   Debug                     = true;
   const char *log_file_name = "log.txt";
 

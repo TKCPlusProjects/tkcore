@@ -21,6 +21,8 @@
 #include <stdarg.h>
 #include <signal.h>
 
+#include <nlohmann/json.hpp>
+
 /// @namespace Namespace tkht
 namespace tkht
 {
