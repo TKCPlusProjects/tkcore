@@ -24,7 +24,7 @@ void JSON::load(std::string path) {
   if (path_check()) {
     std::ifstream ifs(this->path);
     if (ifs.is_open()) {
-      update(nlohmann::json::parse(ifs));
+      merge_patch(nlohmann::json::parse(ifs));
       ifs.close();
     } else {
       Err("JSON加载文件 %s 打开失败", this->path.c_str());

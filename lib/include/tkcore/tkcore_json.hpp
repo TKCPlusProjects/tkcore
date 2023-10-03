@@ -21,17 +21,17 @@ public:
   JSON(std::string standard_filename, std::string path = std::string());
 
   /// @brief 路径更新
-  void path_update(std::string path);
+  virtual void path_update(std::string path);
 
   /// @brief 路径检查
   /// @return 路径是否符合标准
-  bool path_check();
+  virtual bool path_check();
 
   /// @brief 加载
-  void load(std::string path = std::string());
+  virtual void load(std::string path = std::string());
 
   /// @brief 保存
-  void save(std::string path = std::string());
+  virtual void save(std::string path = std::string());
 };
 }
 
